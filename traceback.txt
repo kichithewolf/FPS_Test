@@ -1,0 +1,50 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 27, in script
+    elif health < 100:
+  File "renpy/common/000statements.rpy", line 457, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 84, in execute
+  File "game/script.rpy", line 88, in execute
+  File "game/script.rpy", line 88, in keywords
+NameError: name 'game_over_man' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 27, in script
+    elif health < 100:
+  File "C:\renpy\renpy\ast.py", line 1635, in execute
+    self.call("execute")
+  File "C:\renpy\renpy\ast.py", line 1653, in call
+    renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\renpy\renpy\statements.py", line 144, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 457, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\renpy\renpy\exports.py", line 2311, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\renpy\renpy\ui.py", line 247, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\renpy\renpy\display\core.py", line 2160, in interact
+    scene_lists.replace_transient()
+  File "C:\renpy\renpy\display\core.py", line 669, in replace_transient
+    self.remove(layer, tag)
+  File "C:\renpy\renpy\display\core.py", line 943, in remove
+    self.hide_or_replace(layer, remove_index, "hide")
+  File "C:\renpy\renpy\display\core.py", line 867, in hide_or_replace
+    d = oldsle.displayable._hide(now - st, now - at, prefix)
+  File "C:\renpy\renpy\display\screen.py", line 423, in _hide
+    self.update()
+  File "C:\renpy\renpy\display\screen.py", line 555, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 84, in execute
+  File "game/script.rpy", line 88, in execute
+  File "game/script.rpy", line 88, in keywords
+  File "<screen language>", line 88, in <module>
+NameError: name 'game_over_man' is not defined
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.18.3.761
+FPS_Test 0.0
