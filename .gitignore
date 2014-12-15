@@ -218,3 +218,7 @@ pip-log.txt
 errors.txt
 *.rpyb
 *.rpyc
+game/saves/persistent
+log.txt
+log.txt
+game/saves/persistent
