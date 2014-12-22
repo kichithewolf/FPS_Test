@@ -52,9 +52,9 @@ screen mid_right_slow_level1:
 screen mid_left_slow_level1:
     # Score: 15
     # Health: -25
-    vbox xalign 0.4 yalign 0.8:
+    vbox xalign 0.1 yalign 0.4:
           imagebutton:
-            idle "assets/enemies/level1/mid right char.png"
-            hover "assets/enemies/level1/mid right char hit.png"
-            action [Hide("mid_right_slow_level1"), SetVariable("score", score+15)]
-    timer 1.5 action [Hide("mid_right_slow_level1"), SetVariable("health", health-15), If(health <= 0, true=Return())]
+            idle "assets/enemies/level1/mid left ven.png"
+            hover "assets/enemies/level1/mid left ven hit.png"
+            action [Hide("mid_left_slow_level1"), SetVariable("score", score+15)]
+    timer 1.5 action [Hide("mid_left_slow_level1"), SetVariable("health", health-15), If(health <= 0, true=Return())]

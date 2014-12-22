@@ -44,13 +44,30 @@ screen mt_silver_exterior:
     timer 2.6 action Show("far_slow_level1")
     timer 3.8 action Show("mid_slow_level1")
     timer 5.0 action Show("mid_right_slow_level1")
+    timer 8.0 action Show("mid_left_slow_level1")
+    timer 9.0 action Show("far_slow_level1")
+    timer 10.0 action Show("near_slow_level1")
+    timer 10.6 action Show("mid_left_slow_level1")
+    timer 11.7 action Show("far_slow_level1")
+    timer 12.0 action Show("near_slow_level1")
+    timer 13.5 action Show("far_slow_level1")
+    timer 13.7 action Show("near_slow_level1")
+    timer 14.9 action Show("mid_right_slow_level1")
+    timer 16.6 action Show("mid_right_slow_level1")
+    timer 16.9 action Show("far_slow_level1")
+    timer 17.0 action Show("mid_left_slow_level1")
+    timer 17.5 action Show("mid_slow_level1")
     
-    #timer 1.0 action Show("far_enemy")
-    #timer 1.5 action Show("near_enemy")
-    #timer 3.5 action Show("far_enemy")
-    #timer 5.0 action Show("far_enemy")
-    #timer 6.5 action Show("near_enemy")
-    #timer 8.5 action Show("near_enemy")
-    #timer 9.0 action Show("mid_enemy")
-    #timer 10.5 action Show("far_enemy")
-    timer 12.5 action Return()
+    timer 21.0 action Return()
+
+screen mt_silver_floor_1:
+    add "assets/backgrounds/mt_silver_floor_1.png"
+    use stats
+    
+    timer 3.0 action Return()
+
+screen mt_silver_floor_2:
+    add "assets/backgrounds/mt_silver_floor_2.png"
+    use stats
+    
+    timer 3.0 action Return()
